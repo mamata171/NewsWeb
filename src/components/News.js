@@ -61,7 +61,7 @@ handlenextclick = async ()=>{
    
       <div className="container my-4">
            
-          <h2>NewsWeb - Bussiness Top Headlines</h2>
+          <h2>NewsWeb -Bussiness Top Headlines</h2>
 
          <div className="row">
           {this.state.articles.map((element)=>{
