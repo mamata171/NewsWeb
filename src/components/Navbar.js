@@ -3,9 +3,9 @@ import React, { Component } from 'react'
 export default class Navbar extends Component {
   render() {
     return (
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">Navbar</a>
+          <a className="navbar-brand" href=""><img src="https://t4.ftcdn.net/jpg/03/77/39/29/240_F_377392971_KLaRfHgrkKcVxP03n2gB35J6lfUoelyp.jpg" width={"50px"} alt=""/></a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
