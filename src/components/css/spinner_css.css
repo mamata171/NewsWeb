@@ -1,0 +1,11 @@
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+  }
+  
+  .spinner-image {
+    width: 50px;
+    /* Add additional styles as needed */
+  }
