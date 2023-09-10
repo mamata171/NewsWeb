@@ -84,7 +84,7 @@ handlenextclick = async ()=>{
          <div className="row">
           {!this.state.loading && this.state.articles.map((element)=>{
               return <div className="col-md-4" key={element.url}>
-              <NewsItem title = {element.title} author={element.author} date = {element.publishedAt} url = {element.url} description ={element.description?element.description.slice(0,100):" "} imageUrl = {element.urlToImage}></NewsItem>
+              <NewsItem badge_color = {this.props.badge_color} title = {element.title} source = {element.source.name} author={element.author} date = {element.publishedAt} url = {element.url} description ={element.description?element.description.slice(0,100):" "} imageUrl = {element.urlToImage}></NewsItem>
               </div>
           })} 
         </div>

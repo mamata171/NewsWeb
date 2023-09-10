@@ -14,13 +14,13 @@ export default class extends Component {
      <Navbar/>
      {/* <News pageSize={10} country="in" category="general" /> */}
      <Routes>
-          <Route exact path="/" element={<News key={"general"} pageSize={18} country="in" category="general" />} />
-          <Route exact path="/business" element={<News key={"business"} pageSize={18} country="in" category="business" />} />
-          <Route exact path="/sports" element={<News key={"sports"} pageSize={18} country="in" category="sports" />} />
-          <Route exact path="/entertainment" element={<News key={"entern"} pageSize={18} country="in" category="entertainment" />} />
-          <Route exact path="/health" element={<News key={"sdsd"} pageSize={18} country="in" category="health" />} />
-          <Route exact path="/science" element={<News key={"sdff"} pageSize={18} country="in" category="science" />} />
-          <Route exact path="/technology" element={<News key={"djkgj"} pageSize={18} country="in" category="technology" />} />
+          <Route exact path="/" element={<News key={"general"} pageSize={18} country="in" category="general" badge_color="success" />} />
+          <Route exact path="/business" element={<News key={"business"} pageSize={18} country="in" category="business" badge_color="danger"/>} />
+          <Route exact path="/sports" element={<News key={"sports"} pageSize={18} country="in" category="sports" badge_color="warning"/>} />
+          <Route exact path="/entertainment" element={<News key={"entern"} pageSize={18} country="in" category="entertainment" badge_color="info"/>} />
+          <Route exact path="/health" element={<News key={"sdsd"} pageSize={18} country="in" category="health" badge_color="success"/>} />
+          <Route exact path="/science" element={<News key={"sdff"} pageSize={18} country="in" category="science" badge_color="danger"/>} />
+          <Route exact path="/technology" element={<News key={"djkgj"} pageSize={18} country="in" category="technology" badge_color="dark"/>} />
      </Routes>
      </>
     )
