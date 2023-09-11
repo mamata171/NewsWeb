@@ -11,7 +11,7 @@ export default class News extends Component {
       pageSize: 8
     }
 
-    // static PropTypes = {
+    // static propTypes = {
     //   country:this.PropTypes.string,
     //   pageSize:this.PropTypes.number 
     // }
@@ -41,24 +41,23 @@ componentDidMount(){
   this.updatepage()
 }
 
-handleprevclick(){
+ handleprevclick = async()=>{
   this.setState({page:this.state.page-1});
   this.updatepage()
 }
 
-async handlenextclick(){
+ handlenextclick= async()=>{
   console.log(this.state.page);
   this.setState({page:this.state.page+1});
   this.updatepage()
 }
-
 
   render() {
     return (
    
       <div className="container my-4">
            
-          <h2>NewsWeb - Top Headlines - {this.props.heading}</h2>
+          <h2 className='text-center'>NewsWeb - Top Headlines - {this.props.heading}</h2>
           {/* this syntax displays spinner if loading is true */}
         
          <div className="row">
