@@ -4,6 +4,7 @@ import logo from "../logo.png"
 
 
 export default class Navbar extends Component {
+ 
   render() {
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
@@ -18,6 +19,8 @@ export default class Navbar extends Component {
                 <Link className="nav-link active" aria-current="page" to="/">Home</Link>
               </li>
 
+
+
              <li className="nav-item"> <Link className="nav-link active" to="/business">Business</Link> </li>
               <li className="nav-item"> <Link className="nav-link active" to="/entertainment">Entertainment</Link> </li>
               <li className="nav-item"> <Link className="nav-link active" to="/health">Health</Link> </li>
@@ -27,10 +30,14 @@ export default class Navbar extends Component {
            
             
             </ul>
-            {/* <form className="d-flex" role="search">
-              <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+            <form className="d-flex" role="search">
+              <input  className="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
               <button className="btn btn-outline-success" type="submit">Search</button>
-            </form> */}
+            </form>
           </div>
         </div>
       </nav>

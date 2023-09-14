@@ -21,12 +21,16 @@ constructor(){
         articles:[],
         loading:false,
         page:1,
+       
     }
     console.log("this is constr");
 }
 
+
+
 async updatepage(){
-    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=7e097032efbb4869bc0c79dc47122666&page=1&page=${this.state.page}&pageSize=${this.props.pageSize}`;
+    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=7e097032efbb4869bc0c79dc47122666&page=${this.state.page}&pageSize=${this.props.pageSize}`;
+    console.log("inside update : ",this.state.page)
     this.setState({loading:true});
       let data = await fetch(url);
       let parsedData = await data.json()
@@ -42,14 +46,17 @@ componentDidMount(){
 }
 
  handleprevclick = async()=>{
-  this.setState({page:this.state.page-1});
+  await this.setState({page:this.state.page-1});
   this.updatepage()
+  console.log(this.state.page);
 }
 
  handlenextclick= async()=>{
   console.log(this.state.page);
-  this.setState({page:this.state.page+1});
+  await this.setState({page:this.state.page+1});
+  
   this.updatepage()
+  console.log(this.state.page);
 }
 
   render() {
